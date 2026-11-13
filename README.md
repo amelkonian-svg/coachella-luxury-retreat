@@ -39,4 +39,4 @@ Alternatively, create an empty public GitHub repository, upload the contents of 
 
 Original listing: https://www.vrbo.com/en-ca/cottage-rental/p1229286vb
 
-This is a private-friends joke rendered as a shareable page, not an actual rental listing or review of the property or its hosts. The page includes visible parody identification and deliberately altered photos. Nearby travel estimates are reproduced from the source listing and are not live routes.
+This is a private-friends joke rendered as a shareable page, not an actual rental listing or review of the property or its hosts. The photos are deliberately altered; visitor-facing copy keeps the joke implicit rather than labeling the edits. No reservations or payments are processed. Nearby travel estimates are reproduced from the source listing and are not live routes.

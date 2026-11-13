@@ -3,14 +3,14 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const photos = [
-    { src: 'assets/kitchen.jpg', title: 'Kitchen and breakfast area', description: 'The original kitchen. We had to leave something reassuring.', alt: 'Original listing photo of the kitchen and breakfast area opening to the pool' },
-    { src: 'assets/pool-disaster.jpg', title: 'Private pool. Thriving ecosystem.', description: 'Pool maintenance has taken a more ecological direction. Photo altered for the joke.', alt: 'Altered pool photo: swamp-green water, sad flamingo float and rusty patio chairs' },
-    { src: 'assets/bedroom-disaster.jpg', title: 'King-size expectations.', description: 'Our signature floor-level sleep experience. Photo altered for the joke.', alt: 'Altered bedroom photo: sagging mattresses on the floor, industrial fan and garbage-bag blackout blind' },
-    { src: 'assets/games-disaster.jpg', title: 'Championship-level disappointment.', description: 'Every game ends in the same corner. Photo altered for the joke.', alt: 'Altered games-room photo: torn pool-table felt and cinder-block leg support' },
-    { src: 'assets/living.jpg', title: 'Indoor-outdoor living', description: 'Original listing photo. There is still hope.', alt: 'Original living room with wide glass doors opening onto the patio' },
-    { src: 'assets/exterior.jpg', title: 'First impressions are everything', description: 'Original listing photo. The exterior has an excellent publicist.', alt: 'Original exterior photo of the home and garage' },
-    { src: 'assets/bathroom.jpg', title: 'Master bathroom', description: 'Original listing photo. A quiet place to reconsider your choices.', alt: 'Original master bathroom with bathtub, vanity and fireplace' },
-    { src: 'assets/patio.jpg', title: 'Outdoor dining with a view', description: 'Original listing photo. The mountains remain exceptional.', alt: 'Original patio dining area with mountain views' }
+    { src: 'assets/kitchen.jpg', title: 'Kitchen and breakfast area', description: 'Kitchen and breakfast area opening onto the pool.', alt: 'The kitchen and breakfast area opening to the pool' },
+    { src: 'assets/pool-disaster.jpg', title: 'Private pool. Thriving ecosystem.', description: 'Pool maintenance has taken a more ecological direction.', alt: 'Pool with swamp-green water, sad flamingo float and rusty patio chairs' },
+    { src: 'assets/bedroom-disaster.jpg', title: 'King-size expectations.', description: 'Our signature floor-level sleep experience.', alt: 'Bedroom with sagging mattresses on the floor, industrial fan and garbage-bag blackout blind' },
+    { src: 'assets/games-disaster.jpg', title: 'Championship-level disappointment.', description: 'Every game ends in the same corner.', alt: 'Games room with torn pool-table felt and cinder-block leg support' },
+    { src: 'assets/living.jpg', title: 'Indoor-outdoor living', description: 'There is still hope.', alt: 'Living room with wide glass doors opening onto the patio' },
+    { src: 'assets/exterior.jpg', title: 'First impressions are everything', description: 'The exterior has an excellent publicist.', alt: 'Exterior photo of the home and garage' },
+    { src: 'assets/bathroom.jpg', title: 'Master bathroom', description: 'A quiet place to reconsider your choices.', alt: 'Master bathroom with bathtub, vanity and fireplace' },
+    { src: 'assets/patio.jpg', title: 'Outdoor dining with a view', description: 'The mountains remain exceptional.', alt: 'Patio dining area with mountain views' }
   ];
 
   let toastTimeout;
@@ -39,13 +39,13 @@
   });
 
   const infoText = {
-    app: ['The group-chat edition', 'All the charm of a travel app. None of the accidental reservations. This page is a joke made from the original property listing and a few creatively damaged photos.'],
+    app: ['The group-chat edition', 'Your PGA West escape, conveniently located between high expectations and the festival grounds.'],
     currency: ['Your standards have been converted.', 'Prices are displayed in Canadian dollars. The quality of the pool water is unaffected by the exchange rate.'],
-    list: ['Have a place like this?', 'Excellent. Please consider fixing it first. This is a parody page, so there is no property registration here.'],
+    list: ['Have a place like this?', 'Excellent. Please consider fixing it first. Property registration is unavailable here.'],
     help: ['Help is on the way. In theory.', 'For the pool, try a biologist. For the bed, try optimism. For the person who booked this, try forgiveness.'],
     trips: ['Your upcoming trip', 'Coachella. Six friends. Two forks. One very active group chat. No real booking has been made on this page.'],
     'sign-in': ['No password required.', 'You already have everything you need: access to the group chat and a flexible definition of luxury.'],
-    booking: ['Good news: your standards are available.', 'No reservation has been made and nothing has been charged. This is the joke version. The real house is still on the original Vrbo listing. Your friends, however, may never trust you again.']
+    booking: ['Good news: your standards are available.', 'No reservation has been made and nothing has been charged. Your friends, however, may never trust you again.']
   };
   function showInfo(key) {
     const [title, message] = infoText[key] || infoText.app;
